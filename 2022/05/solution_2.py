@@ -1,8 +1,8 @@
 from collections import defaultdict
 
 def move_crates(crate_map, src, dest, amount):
-    for i in range(amount):
-        crate_map[dest].append(crate_map[src].pop())
+    crate_map[dest] = crate_map[dest] + crate_map[src][-amount:]
+    crate_map[src] = crate_map[src][:-amount]
 
 with open('input') as infile:
     inlines = [i[:-1] for i in infile]
