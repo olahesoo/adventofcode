@@ -1,5 +1,3 @@
-import pprint
-
 def get_dir_size(directory):
     dir_size = 0
     for i in directory.items():
