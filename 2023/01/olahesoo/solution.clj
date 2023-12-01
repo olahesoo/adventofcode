@@ -1,8 +1,8 @@
 (ns solutions.2023.01.olahesoo.solution
   (:require [clojure.string :as str]))
 
-(def sample-input-path "src/solutions/2023/01/olahesoo/sample_input")
-(def input-path "src/solutions/2023/01/olahesoo/input")
+(def sample-input-path "2023/01/olahesoo/sample_input")
+(def input-path "2023/01/olahesoo/input")
 
 (defn get-input [path]
   (->> (slurp path)
